@@ -24,8 +24,7 @@ def plot_velocity_fields(velocity_fields, grid_axis, h):
         plt.subplot(1, 2, 1)
         plt.quiver(coord_x, coord_y, v_x, v_y)
 
-        Y, X = numpy.mgrid[-10:10:0.02,
-               -10:10:0.02]
+        Y, X = numpy.mgrid[-10:10:0.02, -10:10:0.02]
         U = - t * X
         V = math.log(t) * Y
         plt.subplot(1, 2, 2)
