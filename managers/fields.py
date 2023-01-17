@@ -29,11 +29,6 @@ def plot_velocity_fields(velocity_fields, grid_axis, h):
         V = math.log(t) * Y
         plt.subplot(1, 2, 2)
         plt.axis([-grid_axis, grid_axis, -grid_axis, grid_axis])
-        plt.streamplot(X, Y, U, V,
-                       density=4,
-                       arrowsize=1 + 0.2,
-                       linewidth=1,
-                       color='g',
-                       cmap='winter')
+        plt.streamplot(X, Y, U, V, density=4, arrowsize=1 + 0.2, linewidth=1, color='g')
         t += h
         plt.show()
