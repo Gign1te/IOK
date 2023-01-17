@@ -26,8 +26,8 @@ def plot_velocity_fields(velocity_fields, grid_axis, h):
 
         Y, X = numpy.mgrid[-10:10:0.02,
                -10:10:0.02]
-        U = - math.exp(t) * X
-        V = t * Y
+        U = - t * X
+        V = math.log(t) * Y
         plt.subplot(1, 2, 2)
         plt.axis([-grid_axis, grid_axis, -grid_axis, grid_axis])
         plt.streamplot(X, Y, U, V,
