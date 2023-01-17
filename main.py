@@ -6,7 +6,7 @@ import managers.plot_trajectory
 
 x_corner = 3
 y_corner = -3
-h = 0.1
+h = 0.3
 time = 1
 grid_axis = 2
 
